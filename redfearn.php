@@ -1,3 +1,5 @@
+<?php
+/*
 ##################################################
 # This is a remix (adapted work) of an Excel spreadsheet provided by "Geoscience Australia".
 # The original spreadsheet can be found at -
@@ -8,6 +10,7 @@
 # ~Remix by P. Howarth with thanks to B.B.Morgan (http://www.hotchipsnsource.com/redfearn.php)
 # for getting it started.
 ###################################################
+*/
 
 function DMStoDecimalDegrees ($Degrees, $Minutes, $Seconds)
 {
