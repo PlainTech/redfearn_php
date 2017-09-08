@@ -140,7 +140,7 @@ function redfearnLLtoGrid($LatitudeDegrees, $LongitudeDegrees, $EllipsoidDefinit
     $EastingTerm1 = $Nu * $DiffLongitude1 * $CosLatitude1;
     $EastingTerm2 = $Nu * $DiffLongitude3 * $CosLatitude3 * ($Psi1 - $TanLatitude2) / 6;
     $EastingTerm3 = $Nu * $DiffLongitude5 * $CosLatitude5 * (4 * $Psi3 * (1 - 6 * $TanLatitude2) + $Psi2 * (1 + 8 * $TanLatitude2) - $Psi1 * (2 * $TanLatitude2) + $TanLatitude4) / 120;
-    $EastingTerm4 = $Nu * $DiffLongitude7 * $CosLatitude7 * (61 - 479 *  $TanLatitude2 + 179 * $TanLatitude4 - $TanLatitude6) / 5400;
+    $EastingTerm4 = $Nu * $DiffLongitude7 * $CosLatitude7 * (61 - 479 *  $TanLatitude2 + 179 * $TanLatitude4 - $TanLatitude6) / 5040;
 
     $SumEasting = $EastingTerm1 + $EastingTerm2 + $EastingTerm3 + $EastingTerm4;
     $SumEastingK = $CentralScaleFactor * $SumEasting;
